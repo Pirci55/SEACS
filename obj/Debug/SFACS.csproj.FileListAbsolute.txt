@@ -8,3 +8,11 @@ D:\Program\VS Community 2022 17.3.5\Repos\SFACS\obj\Debug\SFACS.exe
 D:\Program\VS Community 2022 17.3.5\Repos\SFACS\obj\Debug\SFACS.pdb
 D:\Program\VS Community 2022 17.3.5\Repos\SFACS\obj\Debug\Interop.IWshRuntimeLibrary.dll
 D:\Program\VS Community 2022 17.3.5\Repos\SFACS\obj\Debug\SFACS.csproj.ResolveComReference.cache
+D:\Other\Гитхаб проекты\SFACS\bin\Debug\SFACS.exe.config
+D:\Other\Гитхаб проекты\SFACS\bin\Debug\SFACS.exe
+D:\Other\Гитхаб проекты\SFACS\bin\Debug\SFACS.pdb
+D:\Other\Гитхаб проекты\SFACS\obj\Debug\SFACS.csproj.AssemblyReference.cache
+D:\Other\Гитхаб проекты\SFACS\obj\Debug\SFACS.csproj.SuggestedBindingRedirects.cache
+D:\Other\Гитхаб проекты\SFACS\obj\Debug\SFACS.csproj.CoreCompileInputs.cache
+D:\Other\Гитхаб проекты\SFACS\obj\Debug\SFACS.exe
+D:\Other\Гитхаб проекты\SFACS\obj\Debug\SFACS.pdb
