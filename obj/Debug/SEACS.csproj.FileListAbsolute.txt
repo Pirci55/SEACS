@@ -1,0 +1,8 @@
+D:\Other\Гитхаб проекты\SEACS\bin\Debug\SFACS.exe.config
+D:\Other\Гитхаб проекты\SEACS\bin\Debug\SFACS.exe
+D:\Other\Гитхаб проекты\SEACS\bin\Debug\SFACS.pdb
+D:\Other\Гитхаб проекты\SEACS\obj\Debug\SEACS.csproj.AssemblyReference.cache
+D:\Other\Гитхаб проекты\SEACS\obj\Debug\SEACS.csproj.SuggestedBindingRedirects.cache
+D:\Other\Гитхаб проекты\SEACS\obj\Debug\SEACS.csproj.CoreCompileInputs.cache
+D:\Other\Гитхаб проекты\SEACS\obj\Debug\SFACS.exe
+D:\Other\Гитхаб проекты\SEACS\obj\Debug\SFACS.pdb

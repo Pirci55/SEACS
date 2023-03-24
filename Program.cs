@@ -65,7 +65,9 @@ namespace SEACS {
                 };
                 Parallel.ForEach(Directory.GetFileSystemEntries(searchPath), element => { Search(element); });
 
+                Console.ForegroundColor = ConsoleColor.Red;
                 Console.WriteLine("Готово! Для закрытия нажмите любую клавишу...");
+                Console.ForegroundColor = ConsoleColor.Gray;
             } catch (Exception error) { Console.WriteLine(error); };
             Console.ReadLine();
         }
