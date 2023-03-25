@@ -54,10 +54,10 @@ namespace SEACS {
                             folderOrFile.Insert(0, folderOrFile.Last().Substring(0, folderOrFile.Last().Length - filesType.Length));
                         };
                         Directory.CreateDirectory(finalPath + folderOrFile.First());
-                        //Console.WriteLine("gg hh.exe");
                         WshShell wshShell = new WshShell();
                         IWshShortcut Shortcut = (IWshShortcut)wshShell.CreateShortcut(finalPath + folderOrFile.First() + "\\" + folderOrFile.Last().Substring(0, folderOrFile.Last().Length - filesType.Length) + ".lnk");
                         Shortcut.TargetPath = path;
+                        Shortcut.WorkingDirectory = searchPath + folderOrFile.First();
                         Shortcut.Save();
                         Console.WriteLine(path);
                     };
@@ -66,7 +66,7 @@ namespace SEACS {
                 Parallel.ForEach(Directory.GetFileSystemEntries(searchPath), element => { Search(element); });
 
                 Console.ForegroundColor = ConsoleColor.Red;
-                Console.WriteLine("Готово! Для закрытия нажмите любую клавишу...");
+                Console.WriteLine("Готово! Для закрытия нажмите enter клавишу...");
                 Console.ForegroundColor = ConsoleColor.Gray;
             } catch (Exception error) { Console.WriteLine(error); };
             Console.ReadLine();
