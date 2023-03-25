@@ -7,17 +7,16 @@ using System.Threading.Tasks;
 using System.Xml.Linq;
 using IWshRuntimeLibrary;
 
-namespace SEACS {
+namespace SFACS {
     internal class Program {
         static void Main(string[] args) {
             try {
                 // переменные
-                string searchPath, finalPath;
-                string filesType = ".exe";
+                string searchPath, finalPath, filesType;
 
                 // лого
                 Console.WriteLine(); Console.ForegroundColor = ConsoleColor.Red;
-                Console.WriteLine("   ######   ######     ###         #####      ######  ");
+                Console.WriteLine("   ######   #######    ###         #####      ######  ");
                 Console.WriteLine("  ######   #######    #####      #########   ######   ");
                 Console.WriteLine("  ##       ##        ##   ##    ###     ###  ##       ");
                 Console.WriteLine("  ##       ##        ##   ##    ##           ##       ");
@@ -25,13 +24,14 @@ namespace SEACS {
                 Console.WriteLine("   ######  ######   ##     ##   ##            ######  ");
                 Console.WriteLine("       ##  ##      ###########  ##                ##  ");
                 Console.WriteLine("       ##  ##      ###     ###  ###     ###       ##  ");
-                Console.WriteLine("   ######  ######  ##       ##   #########    ######  ");
-                Console.WriteLine("  ######    #####  ##       ##     #####     ######   ");
+                Console.WriteLine("   ######  ##      ##       ##   #########    ######  ");
+                Console.WriteLine("  ######   ##      ##       ##     #####     ######   ");
                 Console.WriteLine(); Console.ForegroundColor = ConsoleColor.Gray;
 
                 // получаем данные от пользователя
                 Console.Write("Путь для поиска: "); searchPath = Console.ReadLine();
                 Console.Write("Путь для ярлыков: "); finalPath = Console.ReadLine();
+                Console.Write("Расширение файлов: "); filesType = Console.ReadLine();
 
                 // убирает кавычки по краям ссылки
                 if (finalPath.StartsWith("\"")) finalPath = finalPath.Substring(1);
@@ -42,6 +42,9 @@ namespace SEACS {
                 // добавляет слэш в конец строки
                 if (!finalPath.EndsWith("\\")) finalPath += "\\";
                 if (!searchPath.EndsWith("\\")) searchPath += "\\";
+
+                // исправляет расширение файла
+                if (!filesType.StartsWith(".")) filesType = "." + filesType;
 
                 void Search(string path) {
                     if (path.EndsWith(filesType)) {
@@ -63,10 +66,10 @@ namespace SEACS {
                     };
                     try { Parallel.ForEach(Directory.GetFileSystemEntries(path), element => { Search(element); }); } catch { };
                 };
-                Parallel.ForEach(Directory.GetFileSystemEntries(searchPath), element => { Search(element); });
+                try { Parallel.ForEach(Directory.GetFileSystemEntries(searchPath), element => { Search(element); }); } catch { };
 
                 Console.ForegroundColor = ConsoleColor.Red;
-                Console.WriteLine("Готово! Для закрытия нажмите enter клавишу...");
+                Console.WriteLine("Готово! Для закрытия нажмите enter...");
                 Console.ForegroundColor = ConsoleColor.Gray;
             } catch (Exception error) { Console.WriteLine(error); };
             Console.ReadLine();

@@ -8,3 +8,11 @@ D:\Program\VS Community 2022 17.3.5\Repos\SFACS\obj\Release\SFACS.csproj.Resolve
 D:\Program\VS Community 2022 17.3.5\Repos\SFACS\obj\Release\SFACS.csproj.CoreCompileInputs.cache
 D:\Program\VS Community 2022 17.3.5\Repos\SFACS\obj\Release\SFACS.exe
 D:\Program\VS Community 2022 17.3.5\Repos\SFACS\obj\Release\SFACS.pdb
+D:\Other\Гитхаб проекты\SFACS\bin\Release\SFACS.exe.config
+D:\Other\Гитхаб проекты\SFACS\bin\Release\SFACS.exe
+D:\Other\Гитхаб проекты\SFACS\bin\Release\SFACS.pdb
+D:\Other\Гитхаб проекты\SFACS\obj\Release\SFACS.csproj.AssemblyReference.cache
+D:\Other\Гитхаб проекты\SFACS\obj\Release\SFACS.csproj.SuggestedBindingRedirects.cache
+D:\Other\Гитхаб проекты\SFACS\obj\Release\SFACS.csproj.CoreCompileInputs.cache
+D:\Other\Гитхаб проекты\SFACS\obj\Release\SFACS.exe
+D:\Other\Гитхаб проекты\SFACS\obj\Release\SFACS.pdb
